@@ -1,0 +1,152 @@
+:root {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: #113c2f;
+  background: #f6fff9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at 20% 20%, #d5ffe9, transparent 35%),
+    radial-gradient(circle at 85% 10%, #ffe0c4, transparent 38%),
+    linear-gradient(135deg, #f8fff6 0%, #f4fff8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(30px);
+  opacity: 0.4;
+}
+
+.bg-orb-1 {
+  width: 280px;
+  height: 280px;
+  background: #95efc5;
+  bottom: -80px;
+  left: -50px;
+}
+
+.bg-orb-2 {
+  width: 260px;
+  height: 260px;
+  background: #ffd29a;
+  top: -90px;
+  right: -60px;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid #d9f3e6;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 16px 40px rgba(17, 60, 47, 0.12);
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin-top: 8px;
+  color: #3f685b;
+}
+
+.upload-box {
+  display: block;
+  margin-top: 16px;
+  border: 2px dashed #95bea9;
+  padding: 18px;
+  border-radius: 14px;
+  background: #f6fffa;
+  cursor: pointer;
+}
+
+.upload-box input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.preview {
+  margin-top: 16px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 14px;
+  border: 1px solid #d7efe2;
+  background: #fff;
+}
+
+button {
+  margin-top: 16px;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2ea86f, #1c8f59);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.error {
+  margin-top: 14px;
+  color: #9e2a2a;
+  font-weight: 600;
+}
+
+.result {
+  margin-top: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f1fff7;
+  border: 1px solid #c9ecd9;
+}
+
+.result h2,
+.result h3 {
+  margin: 0 0 8px;
+}
+
+.result p {
+  margin: 6px 0;
+}
+
+.result ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
