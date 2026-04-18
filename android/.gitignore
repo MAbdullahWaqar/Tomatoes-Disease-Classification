@@ -1,0 +1,50 @@
+# Android-specific ignores
+*.apk
+*.ap_
+*.dex
+*.class
+*.jar
+*.so
+*.o
+
+# Build directories
+.gradle
+build/
+.gradle/
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+local.properties
+
+# Gradle
+gradle/
+gradlew
+gradlew.bat
+
+# TensorFlow Lite models (already in assets)
+*.tflite.orig
+*.pb
+*.savedmodel/
+
+# Generated files
+.classpath
+.project
+.settings/
+.metadata
+
+# Environment variables
+.env
+.env.local
+
+# Node modules (if using React bridge)
+node_modules/
+npm-debug.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo

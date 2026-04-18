@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tomato Disease Classifier</string>
+    <string name="permission_camera">Camera access is required to take photos</string>
+    <string name="permission_gallery">Gallery access is required to select images</string>
+</resources>
